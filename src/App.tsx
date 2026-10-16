@@ -93,7 +93,7 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen bg-[#050811] text-[#E8EDF8] selection:bg-[#2563EB]/30 selection:text-[#60A5FA] relative overflow-x-hidden transition-all duration-200 ${isGlitching ? 'opacity-85' : 'opacity-100'}`}>
+    <div className={`min-h-screen bg-[#050811] text-[#E8EDF8] selection:bg-[#2563EB]/30 selection:text-[#60A5FA] ${isGlitching ? 'opacity-85' : 'opacity-100'}`}>
       
       {/* Top Pure Centered Sapphire TECO Wordmark (Fades out on scroll down, appears on scroll up) */}
       <Navbar />
@@ -106,11 +106,11 @@ export default function App() {
         activeBookingsCount={savedBookings.length}
       />
 
-      {/* Floating Active Booking Notification Bar (Positioned on inset-inline-end to never collide with the nav rail) */}
+      {/* Floating Active Booking Notification Bar */}
       {justBooked && (
         <aside 
           aria-label={lang === 'fa' ? 'اطلاعیه پیگیری پرونده' : 'Booking tracking notice'}
-          className="fixed bottom-20 md:bottom-6 inset-inline-end-3 sm:inset-inline-end-6 z-40 max-w-[calc(100vw-1.5rem)] sm:max-w-md p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-[#080E1C]/95 border border-[#3B82F6]/40 shadow-[0_16px_50px_rgba(0,0,0,0.8)] backdrop-blur-2xl flex items-center justify-between gap-2.5 sm:gap-3 animate-in fade-in slide-in-from-bottom-4"
+          className="fixed bottom-20 lg:bottom-6 inset-inline-end-3 sm:inset-inline-end-6 z-40 max-w-[calc(100vw-1.5rem)] sm:max-w-md p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-[#080E1C]/95 border border-[#3B82F6]/40 shadow-[0_16px_50px_rgba(0,0,0,0.8)] backdrop-blur-2xl flex items-center justify-between gap-2.5 sm:gap-3 animate-in fade-in slide-in-from-bottom-4"
         >
           <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
             <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#3B82F6] shrink-0" />
@@ -155,8 +155,8 @@ export default function App() {
         </aside>
       )}
 
-      {/* Main Content with Mobile Bottom Clearance and Dedicated Tablet Rail Gutter */}
-      <main id="main" className="pb-24 md:pb-12 md:ps-16 lg:ps-0 transition-all duration-200">
+      {/* Main Content with Mobile & Tablet Bottom Clearance */}
+      <main id="main" className="pb-24 lg:pb-0">
         <Hero 
           lang={lang} 
           onOpenBooking={() => setIsBookingOpen(true)}

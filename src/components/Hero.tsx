@@ -61,13 +61,13 @@ export const Hero: React.FC<HeroProps> = ({ lang, onOpenBooking, onOpenPortal })
           
           {/* Main Hero Copy */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-mono text-[#94A3B8] px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.3)]">
-              <span className="w-2 h-2 rounded-full bg-[#3B82F6] shadow-[0_0_8px_#3B82F6] animate-pulse" />
-              <span className="text-[#60A5FA] font-bold">TECO STUDIO</span>
-              <span aria-hidden="true" className="text-white/20">·</span>
-              <span className="text-white/90">تهران و ونکوور</span>
-              <span aria-hidden="true" className="text-white/20">·</span>
-              <span className="text-[#93C5FD]">ایران و بین‌الملل</span>
+            <div className="inline-flex items-center gap-2 text-[11px] sm:text-xs font-mono text-[#94A3B8] px-3 sm:px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.3)] max-w-full overflow-hidden whitespace-nowrap">
+              <span className="w-2 h-2 rounded-full bg-[#3B82F6] shadow-[0_0_8px_#3B82F6] animate-pulse shrink-0" />
+              <span className="text-[#60A5FA] font-bold shrink-0">TECO STUDIO</span>
+              <span aria-hidden="true" className="text-white/20 shrink-0">·</span>
+              <span className="text-white/90 shrink-0">تهران و ونکوور</span>
+              <span aria-hidden="true" className="text-white/20 shrink-0 hidden min-[480px]:inline">·</span>
+              <span className="text-[#93C5FD] shrink-0 hidden min-[480px]:inline">ایران و بین‌الملل</span>
             </div>
 
             <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-[1.3] text-white">

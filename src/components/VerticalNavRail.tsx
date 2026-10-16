@@ -172,10 +172,10 @@ export const VerticalNavRail: React.FC<VerticalNavRailProps> = ({
 
   return (
     <>
-      {/* 1. Desktop & Tablet Vertical Rail (Pristine sapphire capsule, scaled safely for tablets) */}
+      {/* 1. Desktop Vertical Capsule Rail (Visible on lg: screens and above) */}
       <aside
         aria-label={lang === 'fa' ? 'ناوبری عمودی دسترسی سریع' : 'Vertical Quick Access Dock'}
-        className="hidden md:flex fixed inset-inline-start-2 lg:inset-inline-start-6 top-1/2 -translate-y-1/2 z-40 flex-col items-center select-none scale-85 lg:scale-100 origin-inline-start transition-all duration-200 pointer-events-auto"
+        className="hidden lg:flex fixed inset-inline-start-4 xl:inset-inline-start-6 top-1/2 -translate-y-1/2 z-40 flex-col items-center select-none scale-95 xl:scale-100 origin-inline-start transition-all duration-200 pointer-events-auto"
       >
         {/* Frosted Matte Glass Vertical Capsule Rail with Sapphire Blue Aura */}
         <div className="relative p-1.5 sm:p-2 rounded-full backdrop-blur-2xl bg-[#060A18]/85 border border-white/12 shadow-[0_20px_50px_rgba(0,0,0,0.85),inset_0_1px_1px_rgba(255,255,255,0.15)] flex flex-col items-center gap-1.5 sm:gap-2">
@@ -325,10 +325,10 @@ export const VerticalNavRail: React.FC<VerticalNavRailProps> = ({
         </div>
       </aside>
 
-      {/* 2. Mobile Native-Style App Bottom Navigation Bar (Responsive for all phones from 320px up to 767px) */}
+      {/* 2. Native-Style App Bottom Navigation Bar (Visible on mobile & tablet screens < lg) */}
       <nav
         aria-label={lang === 'fa' ? 'ناوبری همراه اپلیکیشن' : 'Mobile App Navigation'}
-        className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-[#060A18]/96 backdrop-blur-2xl border-t border-white/12 shadow-[0_-12px_40px_rgba(0,0,0,0.92)] px-1 min-[360px]:px-2 pt-1 pb-[max(0.45rem,env(safe-area-inset-bottom))] select-none"
+        className="lg:hidden fixed bottom-0 left-0 right-0 w-full z-50 bg-[#060A18]/96 backdrop-blur-2xl border-t border-white/15 shadow-[0_-16px_40px_rgba(0,0,0,0.95)] px-2 pt-1.5 pb-[max(0.55rem,env(safe-area-inset-bottom))] select-none"
       >
         <div className="flex items-center justify-between gap-0.5 min-[360px]:gap-1 max-w-md mx-auto w-full">
           {/* Core Mobile Tabs */}
