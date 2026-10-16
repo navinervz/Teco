@@ -1,0 +1,6 @@
+{
+  "name": "TECO Studio | وب‌سایت و اتوماسیون سازمانی",
+  "description": "استودیوی اختصاصی طراحی وب‌سایت، اتوماسیون فرآیندها با n8n و سیستم‌های هوش مصنوعی برای کسب‌وکارهای ایران و کانادا.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
